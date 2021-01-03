@@ -7,4 +7,5 @@ jobs:
   check-ip:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $(dig +short myip.opendns.com @resolver1.opendns.com)
+    name: Check IP
+      run: echo $(dig +short myip.opendns.com @resolver1.opendns.com)
